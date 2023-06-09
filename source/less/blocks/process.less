@@ -1,0 +1,196 @@
+.process {
+    padding: 20px 20px 52px;
+
+    @media (min-width: @tablet-width) {
+        padding: 20px 30px 50px;
+        width: 708px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        width: 1220px;
+        margin: 0 auto;
+    }
+}
+
+.page-main__heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 22px;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.process__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 249px 249px;
+        row-gap: 37px;
+        column-gap: 20%;
+    }
+
+    @media (min-width: @desktop-width) {
+        grid-template-columns: repeat(4, 245px);
+        column-gap: 80px;
+        
+    }
+}
+
+.process__item {
+    padding-top: 20px;
+    font-family: @font-arial;
+    color: @color-gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    position: relative;
+    margin-left: 80px;
+    min-height: 60px;
+
+    &--leaf::before {
+        content: url(/cat-energy/img/background/leaf.svg);
+        position: absolute;
+        left: -80px;
+        
+    }
+
+    &--powder::before {
+        content: url(/cat-energy/img/background/glass.svg);
+        position: absolute;
+        left: -80px;
+    }
+
+    &--meal::before {
+        content: url(/cat-energy/img/background/fork.svg);
+        position: absolute;
+        left: -80px;
+    }
+
+    &--weight::before {
+        content: url(/cat-energy/img/background/weight.svg);
+        position: absolute;
+        left: -80px;
+    }
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        padding-top: 150px;
+        padding-bottom: 57px;
+         
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        &--leaf::before {
+            content: url(/cat-energy/img/background/leaf.svg);
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+
+        &--leaf::after {
+            position: absolute;
+            z-index: -1;
+            content: "1";
+            font-family: @font-oswald;
+            font-weight: 400;
+            font-size: 280px;
+            line-height: 280px;
+            color: #F2F2F2;
+            top: 0;
+            left: 90px;
+        }
+
+        &--powder::before {
+            content: url(/cat-energy/img/background/glass.svg);
+            position: absolute;
+            top: 40px;;
+            left: 0;
+        }
+
+        &--powder::after {
+            position: absolute;
+            z-index: -1;
+            content: "2";
+            font-family: @font-oswald;
+            font-weight: 400;
+            font-size: 280px;
+            line-height: 280px;
+            color: #F2F2F2;
+            top: 0;
+            left: 120px;
+        }
+
+        &--meal::before {
+            content: url(/cat-energy/img/background/fork.svg);
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+
+        &--meal::after {
+            position: absolute;
+            z-index: -1;
+            content: "3";
+            font-family: @font-oswald;
+            font-weight: 400;
+            font-size: 280px;
+            line-height: 280px;
+            color: #F2F2F2;
+            top: 0;
+            left: 90px;
+        }
+
+        &--weight::before {
+            content: url(/cat-energy/img/background/weight.svg);
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+
+        &--weight::after {
+            position: absolute;
+            z-index: -1;
+            content: "4";
+            font-family: @font-oswald;
+            font-weight: 400;
+            font-size: 280px;
+            line-height: 280px;
+            color: #F2F2F2;
+            top: 0;
+            left: 120px;
+        }
+
+    }
+
+    @media (min-width: @desktop-width) {
+        font-family: @font-arial;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

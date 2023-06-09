@@ -1,0 +1,27 @@
+.button {
+    color: @color-white;
+    background-color: @color-green;
+    font-family: @font-oswald;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.page-header__toggler {
+    display: block;
+    border: none;
+    width: 34px;
+    height: 38px;
+    cursor: pointer;
+
+    background-image: url(/cat-energy/img/background/burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}

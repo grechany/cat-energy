@@ -1,0 +1,212 @@
+.catalog-sections {
+    padding: 20px;
+    background-color: @color-white;
+    color: @color-black;
+
+    @media (min-width: @desktop-width) {
+        width: 1220px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 570px 570px;
+        column-gap: 80px;
+        padding-top: 40px;
+    }
+}
+
+.catalog-sections__item {
+    padding: 20px;
+    background-color: #F2F2F2;
+
+    &:first-of-type {
+        margin-bottom: 20px; 
+    }
+
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 270px;
+        column-gap: 20px;
+        padding: 77px 30px 57px 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+        display: flex;
+        flex-direction: column;
+        
+        &:first-of-type {
+            margin-bottom: 0; 
+        }
+    }
+}
+
+.catalog-sections__heading {
+    margin: 0;
+    margin-left: 60px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        
+        margin: 0;
+        margin-bottom: 24px;
+        
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+
+
+        &::before {
+            display: none;
+        }
+
+}
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 73px;
+
+        &::before {
+            display: block;
+        }
+    }   
+
+}
+
+.catalog-sections__heading-slim {
+    @media (max-width: @mobie-width) {
+        &::before {
+            position: absolute;
+            content: url(/cat-energy/img/background/cat_slim-mobile.svg);
+            width: 50px;
+            height: 53px;
+            left: -60px;
+            top: -10%;
+        }
+    }
+    
+    @media (min-width: @tablet-width) {
+           &::after {
+                position: absolute;
+                content: url(/cat-energy/img/background/cat_slim-tablet.svg);
+                right: -250px;
+           }
+    }
+
+    @media (min-width: @desktop-width) {
+        &::after {
+                display: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: url(/cat-energy/img/background/cat_slim--desktop.svg);
+            width: 100px;
+            height: 100px;
+            top: -30px;
+            left: -162px;
+        }
+    
+        margin-left: 162px;
+    }
+}
+
+.catalog-sections__heading-pro {
+    @media (max-width: @mobie-width) {
+        &::before {
+            position: absolute;
+            content: url(/cat-energy/img/background/cat_pro-mobile.svg);
+            width: 50px;
+            height: 53px;
+            left: -75px;
+            top: -10%;
+        }
+    }
+    
+    @media (min-width: @tablet-width) {
+            &::after {
+                position: absolute;
+                content: url(/cat-energy/img/background/cat_pro-tablet.svg);
+                right: -280px;
+           }
+    }
+
+    @media (min-width: @desktop-width) {
+        &::after {
+                display: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: url(/cat-energy/img/background/cat_pro--desktop.svg);
+            width: 100px;
+            height: 100px;
+            top: -30px;
+            left: -147px;
+        }
+
+        margin-left: 147px;
+    }
+}
+    
+.catalog-sections__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: @color-gray;
+    font-family: @font-arial;
+    margin-bottom: 23px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #D9D9D9; 
+
+    @media (min-width: @tablet-width) {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+
+        color: @color-black;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 23px;
+    }
+}
+
+.catalog-sections__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: @color-black;
+
+    &::after {
+        content: url(/cat-energy/img/background/icon_arrow.svg);
+        margin-left: 17px;
+    }
+
+    @media (min-width: @tablet-width) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+
+        &::after {
+            
+            margin-left: 25px;
+        }
+    }
+}

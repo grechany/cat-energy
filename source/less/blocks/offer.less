@@ -1,0 +1,43 @@
+.offer {
+    color: @color-white;
+    background-color: @color-green;
+    background-image: url("/cat-energy/img/background/catbag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+
+    margin-top: 35px;
+
+    @media (min-width: @desktop-width) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+.offer__container {
+    min-height: 188px;
+    padding: 58px 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.offer__image {
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.offer__text {
+    margin: 0;
+    text-align: center;
+    font-family: @font-arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+

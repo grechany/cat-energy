@@ -1,0 +1,31 @@
+.form__body {
+    padding: 20px;
+
+    @media(min-width: @tablet-width) {
+        width: 630px;
+        padding: 0 30px;
+    }
+
+    @media(min-width: @desktop-width) {
+        width: 1220px;
+        padding: 0;
+    }
+}
+  
+.form__group {
+    margin: 0;
+}
+
+.form__button-container {
+    @media(min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 282px 180px;
+        column-gap: 60px;
+    }
+
+    @media(min-width: @desktop-width) {
+        display: grid;
+        grid-template-columns: 568px 180px;
+        column-gap: 81px;
+    }
+}
