@@ -23,6 +23,15 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+        min-height: 0;
+        flex-direction: row;
+        
+        padding-left: 77px;
+        padding-top: 57px;
+        padding-bottom: 60px;
+    }
 }
 
 .offer__image {
@@ -39,5 +48,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 176px;
+        align-self: center;
+    }
 }
 

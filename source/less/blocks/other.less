@@ -15,19 +15,18 @@
     }
 }
 
-.other__title {
+.other__title { 
     color: @color-black;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     margin: 0;
-    
-    @media (max-width: @mobie-width) {
-        position: relative;
-        padding-bottom: 36px;
-        border-bottom: 1px solid #CDCDCD;
 
-        &::after {
+    position: relative;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #CDCDCD;
+
+    &::after {
             position: absolute;
             top: 15px;
             right: -22px;
@@ -35,12 +34,39 @@
             width: 53px;
             height: 2px;
             background-color: @color-green;
+    }
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+        border-bottom: none;
+        padding-bottom: 80px;
+
+        &::after {
+            width: 100%;
+            top: 23px;
+            right: 0;
+            left: 350px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 23px;
+            width: 30px;
+            height: 2px;
+            background-color: @color-green;
+            left: -40px;
         }
     }
 
     @media (min-width: @desktop-width) {
         grid-column: 1;
         grid-row: 1;
+
+        &::after {
+            display: none;
+        }
     }
 }
 
@@ -48,19 +74,34 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-    @media (min-width: @mobie-width) {
-        border-bottom: 1px solid #CDCDCD;
-        padding-bottom: 19px;
-    }
-
-    border-bottom: 1px solid #CDCDCD;
     padding-bottom: 19px;
+
+    @media (min-width: @tablet-width) {
+        border: 1px solid #CDCDCD;
+        padding: 0 30px;
+    }
 
     @media (min-width: @desktop-width) {
         grid-column: 1;
-        grid-row: 2;
-        
+        grid-row: 2;   
+    }
+}
+
+.other__item {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #CDCDCD;
+
+    @media (min-width: @tablet-width) {
+        border: none;
+    }
+}
+
+.card-header {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;  
     }
 }
 
@@ -71,12 +112,21 @@
     line-height: 16px;
     margin-top: 13px;
     margin-bottom: 13px; 
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
 }
 
 .other-card__description {
     display: flex;
     justify-content: space-between;
     margin-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+        width: 180px;
+        justify-content: space-between;
+    }
 }
 
 .other-card__text {
@@ -89,6 +139,5 @@
 }
 
 .card__button {
-    display: block;
-    
+    display: block;  
 }
