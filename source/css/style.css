@@ -1223,7 +1223,7 @@
 }
 @media (min-width: 768px) {
   .page-main__title {
-    width: 708px;
+    min-width: 708px;
     margin: 0 auto;
     padding: 30px;
   }
@@ -1453,8 +1453,7 @@
 }
 @media (min-width: 768px) {
   .other {
-    width: 708px;
-    margin: 0 auto;
+    min-width: 708px;
   }
 }
 @media (min-width: 1440px) {
@@ -1493,7 +1492,7 @@
     padding-bottom: 80px;
   }
   .other__title::after {
-    width: 100%;
+    width: 50%;
     top: 23px;
     right: 0;
     left: 350px;
@@ -1527,6 +1526,7 @@
   .other__list {
     border: 1px solid #CDCDCD;
     padding: 0 30px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
@@ -1596,7 +1596,7 @@
   font-size: 16px;
   text-align: center;
   line-height: 20px;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 @media (min-width: 1440px) {
   .offer {
