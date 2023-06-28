@@ -123,6 +123,20 @@
     }
 }
 
+.site-menu__link-catalog {
+    color: @color-black;
+    text-decoration: none;
+}
+
+.catalog__link--active {
+    @media (min-width: @tablet-width) {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: @color-green;
+    }
+}
+
 /*.site-menu--close {
     @media (max-width: @mobie-width) {
         display: none;
