@@ -1627,11 +1627,12 @@
   line-height: 14px;
   margin: 0;
 }
-.card__button {
+.other-card__button {
   display: block;
+  padding: 10px;
 }
 @media (min-width: 1440px) {
-  .card__button {
+  .other-card__button {
     padding: 8px 90px;
   }
 }
@@ -1748,6 +1749,13 @@
 .field-group {
   padding: 20px 0;
   border: none;
+  border-bottom: 1px solid #D9D9D9;
+}
+.field-group:nth-child(3) {
+  border: none;
+}
+.field-group:nth-child(4) {
+  border: none;
 }
 .field-group__list {
   list-style-type: none;
@@ -1769,16 +1777,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  align-self: center;
   white-space: nowrap;
   margin-right: 10px;
 }
 .field__input {
   font-family: "Oswald", sans-serif;
-  color: #444444;
+  border: 1px solid #E7E7E7;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 13px;
   width: 100%;
 }
 .control__lead {

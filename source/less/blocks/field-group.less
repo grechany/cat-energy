@@ -21,6 +21,16 @@
 .field-group {
     padding: 20px 0;
     border: none;
+
+    border-bottom: 1px solid #D9D9D9;
+
+    &:nth-child(3) {
+        border: none;
+    }
+
+    &:nth-child(4) {
+        border: none;
+    }
 }
 
 .field-group__list {
@@ -44,18 +54,22 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    align-self: center;
 
     white-space: nowrap;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 
 .field__input {
     font-family: @font-oswald;
-    color: @color-gray;
+    border: 1px solid #E7E7E7;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+
+    
+    padding: 13px;
 
     width: 100%;
 }
