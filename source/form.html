@@ -70,21 +70,24 @@
   
               <ul class="field-group__list">
                 <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input" name="target" type="radio" value="fit">
-                    <span class="control__lead">Похудение</span>
+                  <label class="control">
+                    <input class="visually-hidden control__input" name="target" type="radio" value="fit">
+                    <span class="control-mark"></span>
+                    <span class="control__lead control__lead--radio">Похудение</span>
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input" name="target" type="radio" value="fitness">
-                    <span class="control__lead">Набор массы</span>
+                  <label class="control">
+                    <input class="visually-hidden control__input" name="target" type="radio" value="fitness">
+                    <span class="control-mark"></span>
+                    <span class="control__lead control__lead--radio">Набор массы</span>
                   </label>
                 </li>
-                <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input" name="target" type="radio" value="advice">
-                    <span class="control__lead">Не знаю (нужен ваш совет)</span>
+                <li class="field-group__item field-group__item--last">
+                  <label class="control">
+                    <input class="visually-hidden control__input" name="target" type="radio" value="advice">
+                    <span class="control-mark"></span>
+                    <span class="control__lead control__lead--radio">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -110,8 +113,8 @@
             <div class="form__group field-group">
               <label class="field-group__heading" for="comment">Комментарий</label>
   
-              <div class="field">
-                <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <div class="field-textarea">
+                <textarea class="field-textarea__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
 
