@@ -1749,7 +1749,19 @@
 .field-group {
   padding: 20px 0;
   border: none;
+}
+.field-group__name {
+  padding-top: 0;
+  padding-bottom: 27px;
   border-bottom: 1px solid #D9D9D9;
+}
+.field-group__target {
+  padding-top: 28px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.field-group__owner {
+  padding-top: 0;
 }
 .field-group__list {
   list-style-type: none;
@@ -1758,9 +1770,23 @@
 }
 .field-group__item {
   display: flex;
-  margin-bottom: 13px;
 }
-.field-group__item--last {
+.field-group__item-name {
+  margin-bottom: 14px;
+}
+.field-group__item-name:last-child {
+  margin-bottom: 0;
+}
+.field-group__item-target {
+  margin-bottom: 25px;
+}
+.field-group__item-target:last-child {
+  margin-bottom: 0;
+}
+.field-group__item-owner {
+  margin-bottom: 14px;
+}
+.field-group__item-owner:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -1826,7 +1852,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+}
+.field-group__heading-owner {
   padding-top: 26px;
+  margin-bottom: 35px;
 }
 @media (min-width: 768px) {
   .additional-list {

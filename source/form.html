@@ -43,67 +43,64 @@
           <h2 class="visually-hidden">Форма анкеты</h2>
 
           <form class="form__body" method="post" action="https://echo.htmlacademy.ru/">
-
             <div class="field-container">
+              <fieldset class="form__group field-group field-group__name">
+                <legend class="visually-hidden">Информация о коте</legend>
 
-            <fieldset class="form__group field-group">
-              <legend class="visually-hidden">Информация о коте</legend>
-
-              <ul class="field-group__list">
-                <li class="field-group__item">
-                  <label class="field__lead">Имя:*</label>
-                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" required> 
-                </li>
-                <li class="field-group__item">
+                <ul class="field-group__list">
+                  <li class="field-group__item field-group__item-name">
+                    <label class="field__lead">Имя:*</label>
+                    <input class="field__input" name="cat-name" type="text" placeholder="Барсик" required> 
+                  </li>
+                  <li class="field-group__item field-group__item-name">
                     <label class="field__lead">Вес (кг):*</label>
                     <input class="field__input" name="cat-weight" type="text" placeholder="7" required>
-                </li>
-                <li class="field-group__item">
+                  </li>
+                  <li class="field-group__item field-group__item-name">
                     <label class="field__lead">Возраст (лет):</label>
                     <input class="field__input" name="cat-age" type="text" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__group field-group">
-              <legend class="visually-hidden">Цель программы</legend>
-  
-              <ul class="field-group__list">
-                <li class="field-group__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" name="target" type="radio" value="fit">
-                    <span class="control-mark"></span>
-                    <span class="control__lead control__lead--radio">Похудение</span>
-                  </label>
-                </li>
-                <li class="field-group__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" name="target" type="radio" value="fitness">
-                    <span class="control-mark"></span>
-                    <span class="control__lead control__lead--radio">Набор массы</span>
-                  </label>
-                </li>
-                <li class="field-group__item field-group__item--last">
-                  <label class="control">
-                    <input class="visually-hidden control__input" name="target" type="radio" value="advice">
-                    <span class="control-mark"></span>
-                    <span class="control__lead control__lead--radio">Не знаю (нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="form__group field-group field-group__target">
+                <legend class="visually-hidden">Цель программы</legend>
+                <ul class="field-group__list">
+                  <li class="field-group__item field-group__item-target">
+                    <label class="control">
+                      <input class="visually-hidden control__input" name="target" type="radio" value="fit">
+                      <span class="control-mark"></span>
+                      <span class="control__lead control__lead--radio">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="field-group__item field-group__item-target">
+                    <label class="control">
+                      <input class="visually-hidden control__input" name="target" type="radio" value="fitness">
+                      <span class="control-mark"></span>
+                      <span class="control__lead control__lead--radio">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="field-group__item field-group__item-target">
+                    <label class="control">
+                      <input class="visually-hidden control__input" name="target" type="radio" value="advice">
+                      <span class="control-mark"></span>
+                      <span class="control__lead control__lead--radio">Не знаю (нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
             </div>
 
-            <fieldset class="form__group field-group">
-              <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
+            <fieldset class="form__group field-group field-group__owner">
+              <legend class="field-group__heading field-group__heading-owner">Контактные данные (владельца кота)</legend>
   
               <ul class="field-group__list field-container">
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item-owner">
                     <label class="field__lead">E-mail:*</label>
                     <input class="field__input" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item-owner">
                     <label class="field__lead">Телефон:*</label>
                     <input class="field__input" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
                 </li>
