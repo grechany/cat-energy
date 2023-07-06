@@ -37,6 +37,10 @@
     &__owner {
         padding-top: 0;
     }
+
+    &__comment {
+        padding-top: 0;
+    }
 }
 
 .field-group__list {
@@ -66,6 +70,14 @@
 
     &-owner {
         margin-bottom: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-choise {
+        margin-bottom: 12px;
 
         &:last-child {
             margin-bottom: 0;
@@ -142,6 +154,31 @@
     left: 3px;
 }
 
+.control__input[type="checkbox"]:checked + .control-radio {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 1px;
+        top: 11px;
+        left: 3px;
+        background-color: @color-green;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 1px;
+        top: 9px;
+        left: 7px;
+        
+        background-color: @color-green;
+        transform: rotate(-45deg);
+    }
+}
+
 .field-group__heading {
     font-weight: 400;
     font-size: 24px;
@@ -175,5 +212,13 @@
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #E7E7E7;
+
+        font-family: @font-oswald;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding: 10px 12px;
     }
 }
