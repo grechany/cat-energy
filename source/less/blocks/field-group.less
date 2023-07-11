@@ -61,6 +61,10 @@
 
     &__choise {
         padding: 0;
+        
+        @media (min-width: @tablet-width) {
+            padding-bottom: 30px;
+        }
     }
 }
 
@@ -188,6 +192,10 @@
     &--checkbox {
         position: relative;
 
+        @media (min-width: @tablet-width) {
+            margin-left: 60px;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -196,6 +204,12 @@
             border: 1px solid #CDCDCD;
             left: -40px;
             top: -2px;
+
+            @media (min-width: @tablet-width) {
+                width: 40px;
+                height: 40px;
+                left: -60px
+            }
         }
     }
 }
@@ -226,6 +240,13 @@
         left: 3px;
         background-color: @color-green;
         transform: rotate(45deg);
+
+        @media (min-width: @tablet-width) {
+            top: 22px;
+            left: 10px;
+            height: 2px;
+            width: 10px;
+        }
     }
 
     &::after {
@@ -238,6 +259,13 @@
         
         background-color: @color-green;
         transform: rotate(-45deg);
+
+        @media (min-width: @tablet-width) {
+            top: 19px;
+            left: 15px;
+            height: 2px;
+            width: 19px;
+        }
     }
 }
 
@@ -322,10 +350,20 @@
         margin-top: 34px;
         text-align: center;
     } 
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        margin-bottom: 72px;
+    }
 }
 
 .form__button {
     @media (max-width: @mobie-width) {
         width: 100%;
     } 
+
+    @media (min-width: @tablet-width) {
+        min-width: 262px;
+        font-size: 20px;
+    }
 }

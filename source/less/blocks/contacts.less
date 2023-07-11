@@ -30,14 +30,22 @@
 }
 
 .contacts__heading {
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: @color-black;
-}
 
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+}
+    
 .contacts__address {
+    margin: 0;
     font-family: @font-arial;
     color: @color-gray;
     font-weight: 400;
