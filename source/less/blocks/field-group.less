@@ -1,7 +1,7 @@
 .program {
     @media (min-width: @tablet-width) {
-        width: 768px;
-        margin: 0 auto;
+        min-width: 768px;
+        
     }
 
     @media (min-width: @desktop-width) {
@@ -15,6 +15,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 80px;
+        align-items: center;
     }
 }
 
@@ -31,6 +32,10 @@
             border: none;
             padding-bottom: 72px;
         }
+
+        @media (min-width: @desktop-width) {
+            padding: 0;
+        }
     }
 
     &__target {
@@ -40,6 +45,10 @@
 
         @media (min-width: @tablet-width) {
             border: 1px solid #D9D9D9;
+        }
+
+        @media (min-width: @desktop-width) {
+            padding: 25px;
         }
     }
 
@@ -365,5 +374,15 @@
     @media (min-width: @tablet-width) {
         min-width: 262px;
         font-size: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 568px;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
     }
 }

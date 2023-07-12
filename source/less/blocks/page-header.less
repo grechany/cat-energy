@@ -32,7 +32,8 @@
 
 .page-header__logo {
     min-width: 190px;
-    width: calc(57%);
+    width: 60%;
+    max-width: 412px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +80,19 @@
 .site-menu__item {
     padding-top: 22px;
     padding-bottom: 24px;
+
+    &--active {
+        @media (min-width: @tablet-width) {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 2px;
+            text-decoration-color: @color-green;
+        }
+
+        @media (min-width: @desktop-width) {
+            text-decoration-color: @color-white;
+        }
+      }
     
       @media (max-width: @mobie-width) {
         border-top: 1px solid #E6E6E6;
@@ -91,19 +105,6 @@
         line-height: 24px;
         align-self: center;
         padding: 0;
-      }
-
-      &--active {
-        @media (min-width: @tablet-width) {
-            text-decoration: underline;
-            text-underline-offset: 10px;
-            text-decoration-thickness: 2px;
-            text-decoration-color: @color-green;
-        }
-
-        @media (min-width: @desktop-width) {
-            text-decoration-color: @color-white;
-        }
       }
   
       @media (min-width: @desktop-width) {
