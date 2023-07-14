@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy: Функциональное питание для котов</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="../favicon.ico">
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <nav class="page-header__nav">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
-            <img class="logo__image" src="../img/logo-image.svg" width="34" height="38" alt="Cat Energy">
-            <img class="logo__sign" src="../img/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/header-logo/logo-image-large.svg">
+              <source media="(min-width: 768px)" srcset="../img/header-logo/logo-image-medium.svg">
+              <img class="logo__image" src="../img/header-logo/logo-image-small.svg" width="34" height="38" alt="Cat Energy">
+            </picture>
+            <img class="logo__sign" src="../img/header-logo/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
           </a>
 
           <button class="page-header__toggler page-header__toggler--active" type="button">
