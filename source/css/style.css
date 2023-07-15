@@ -226,6 +226,12 @@
   padding: 20px;
   background-color: #F2F2F2;
 }
+@media (min-width: 1440px) {
+  .page__footer {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 .page-footer__container {
   display: flex;
   flex-direction: column;
@@ -326,6 +332,7 @@
     z-index: 10;
     margin-top: -110px;
     padding-bottom: 20px;
+    width: 1440px;
   }
 }
 @media (min-width: 1440px) {
@@ -859,6 +866,8 @@
 @media (min-width: 1440px) {
   .example {
     border: none;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
@@ -1211,6 +1220,8 @@
 @media (min-width: 1440px) {
   .page-main__footer {
     position: relative;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 .contacts__container {
