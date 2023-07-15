@@ -225,14 +225,22 @@
 .images__after {
     width: 280px;
     height: 232px;
-    background-image: url(/cat-energy/img/after-mobile.png);
+    background-image: url(/cat-energy/img/example-image/after-mobile.png);
     background-size: 280px 232px;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url(/cat-energy/img/example-image/after-mobile@2x.png);
+    }
 
     @media (min-width: @tablet-width) {
         width: 590px;
         height: 576px;
-        background-image: url(/cat-energy/img/after-mobile.png);
+        background-image: url(/cat-energy/img/example-image/after-tablet.png);
         background-size: 650px 576px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/cat-energy/img/example-image/after-tablet@2x.png);
+        }
     }
     
 }
@@ -240,14 +248,22 @@
 .images__before {
     width: 280px;
     height: 232px;
-    background-image: url(/cat-energy/img/before-mobile.png);
+    background-image: url(/cat-energy/img/example-image/before-mobile.png);
     background-size: 280px 232px;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url(/cat-energy/img/example-image/before-mobile@2x.png);
+    }
 
     @media (min-width: @tablet-width) {
         width: 290px;
         height: 576px;
-        background-image: url(/cat-energy/img/before-mobile.png);
+        background-image: url(/cat-energy/img/example-image/before-tablet.png);
         background-size: 590px 576px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/cat-energy/img/example-image/before-tablet@2x.png);
+        }
     }
 }
 

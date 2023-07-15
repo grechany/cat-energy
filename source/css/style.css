@@ -298,10 +298,15 @@
 .container {
   min-height: 302px;
   background-color: #68b738;
-  background-image: url(/cat-energy/img/background/promo.jpg);
+  background-image: url(/cat-energy/img/background/promo-image/promo-small.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .container {
+    background-image: url(/cat-energy/img/background/promo-image/promo-small@2x.jpg);
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -333,10 +338,15 @@
 @media (min-width: 1440px) {
   .promo__image-container {
     grid-column: 2;
-    background-image: url(/cat-energy/img/background/promo.jpg);
+    background-image: url(/cat-energy/img/background/promo-image/promo-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .promo__image-container {
+    background-image: url(/cat-energy/img/background/promo-image/promo-desktop@2x.jpg);
   }
 }
 .promo__heading {
@@ -1057,29 +1067,49 @@
 .images__after {
   width: 280px;
   height: 232px;
-  background-image: url(/cat-energy/img/after-mobile.png);
+  background-image: url(/cat-energy/img/example-image/after-mobile.png);
   background-size: 280px 232px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .images__after {
+    background-image: url(/cat-energy/img/example-image/after-mobile@2x.png);
+  }
 }
 @media (min-width: 768px) {
   .images__after {
     width: 590px;
     height: 576px;
-    background-image: url(/cat-energy/img/after-mobile.png);
+    background-image: url(/cat-energy/img/example-image/after-tablet.png);
     background-size: 650px 576px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .images__after {
+    background-image: url(/cat-energy/img/example-image/after-tablet@2x.png);
   }
 }
 .images__before {
   width: 280px;
   height: 232px;
-  background-image: url(/cat-energy/img/before-mobile.png);
+  background-image: url(/cat-energy/img/example-image/before-mobile.png);
   background-size: 280px 232px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .images__before {
+    background-image: url(/cat-energy/img/example-image/before-mobile@2x.png);
+  }
 }
 @media (min-width: 768px) {
   .images__before {
     width: 290px;
     height: 576px;
-    background-image: url(/cat-energy/img/before-mobile.png);
+    background-image: url(/cat-energy/img/example-image/before-tablet.png);
     background-size: 590px 576px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .images__before {
+    background-image: url(/cat-energy/img/example-image/before-tablet@2x.png);
   }
 }
 @media (max-width: 767px) {

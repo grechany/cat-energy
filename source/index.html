@@ -51,7 +51,11 @@
           </div>
 
           <div class="promo__image-container">
-            <img class="promo__image" src="../img/index-can-mobile.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="../img/promo-image/index-can-desktop.png, ../img/promo-image/index-can-desktop-2x.png" >
+              <source media="(min-width: 768px)" srcset="../img/promo-image/index-can-tablet.png, ../img/promo-image/index-can-tablet-2x.png">
+              <img class="promo__image" src="../img/promo-image/index-can-mobile.png" srcset="../img/promo-image/index-can-mobile-2x.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+            </picture>
             <a class="promo__button button" href="../form.html">Подобрать программу</a>
           </div>
            
@@ -163,7 +167,7 @@
     <footer class="page__footer page-footer">
       <div class="page-footer__container">
         <a class="page-footer__logo logo">
-          <img class="logo__image" src="../img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
+          <img class="logo__image" src="../img/header-logo/logo-sign.svg" width="128" height="24" alt="Cat Energy">
         </a>
 
         <ul class="page-footer__social social">

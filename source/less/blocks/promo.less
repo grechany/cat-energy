@@ -8,10 +8,13 @@
 .container {
     min-height: 302px;
     background-color: @color-green;
-    background-image: url(/cat-energy/img/background/promo.jpg);
+    background-image: url(/cat-energy/img/background/promo-image/promo-small.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-resolution: 2dppx) {
+        background-image: url(/cat-energy/img/background/promo-image/promo-small@2x.jpg);
+    }
 
     @media (min-width: @tablet-width) {
         min-width: 709px;
@@ -44,10 +47,14 @@
 .promo__image-container {
     @media (min-width: @desktop-width) {
         grid-column: 2;
-        background-image: url(/cat-energy/img/background/promo.jpg);
+        background-image: url(/cat-energy/img/background/promo-image/promo-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/cat-energy/img/background/promo-image/promo-desktop@2x.jpg);
+        }
     }
 }
 
