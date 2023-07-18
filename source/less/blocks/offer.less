@@ -1,15 +1,25 @@
 .offer {
     color: @color-white;
     background-color: @color-green;
-    background-image: url("/cat-energy/img/background/catbag.jpg");
+    background-image: url("/cat-energy/img/background/catbag-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-  
     font-size: 16px;
     text-align: center;
     line-height: 20px;
-
     margin-top: 15px;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("/cat-energy/img/background/catbag-mobile@2x.png");
+    }
+
+    @media (min-width: @tablet-width) {
+        background-image: url("/cat-energy/img/background/catbag-tablet.jpg");
+        
+        @media (min-resolution: 2dppx) {
+            background-image: url("/cat-energy/img/background/catbag-tablet@2x.jpg");
+        }
+    }
 
     @media (min-width: @desktop-width) {
         grid-column: 2;

@@ -204,11 +204,11 @@
             text-decoration-color: #68b738;
   }
 }
-@media (max-width: 767px) {
-  .site-menu--close {
-    display: none;
-  }
-}
+/*.site-menu--close {
+    @media (max-width: @mobie-width) {
+        display: none;
+    } 
+}*/
 @media (min-width: 768px) {
   .logo__image {
     width: 61px;
@@ -1353,9 +1353,11 @@
   .cards__list {
     width: 708px;
     margin: 0 auto;
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 140px;
     padding: 30px;
   }
 }
@@ -1381,6 +1383,7 @@
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 }
 .card__link {
@@ -1414,11 +1417,29 @@
   width: 68px;
   height: 86px;
 }
+@media (min-width: 768px) {
+  .card__img {
+    width: 161px;
+    height: 172px;
+    position: absolute;
+    left: 25%;
+    top: -35px;
+  }
+}
 .card__img--big {
   display: block;
   margin: auto;
   width: 84px;
   height: 100px;
+}
+@media (min-width: 768px) {
+  .card__img--big {
+    width: 168px;
+    height: 200px;
+    position: absolute;
+    left: 25%;
+    top: -55px;
+  }
 }
 .table {
   font-family: "Arial", sans-serif;
@@ -1501,6 +1522,11 @@
     margin-bottom: 87px;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .cards__description {
+    padding-top: 120px;
   }
 }
 .more__title {
@@ -1705,13 +1731,28 @@
 .offer {
   color: #ffffff;
   background-color: #68b738;
-  background-image: url("/cat-energy/img/background/catbag.jpg");
+  background-image: url("/cat-energy/img/background/catbag-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
   text-align: center;
   line-height: 20px;
   margin-top: 15px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("/cat-energy/img/background/catbag-mobile@2x.png");
+  }
+}
+@media (min-width: 768px) {
+  .offer {
+    background-image: url("/cat-energy/img/background/catbag-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("/cat-energy/img/background/catbag-tablet@2x.jpg");
+  }
 }
 @media (min-width: 1440px) {
   .offer {
