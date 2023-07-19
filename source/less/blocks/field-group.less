@@ -1,7 +1,6 @@
 .program {
     @media (min-width: @tablet-width) {
-        min-width: 768px;
-        
+        min-width: 768px;   
     }
 
     @media (min-width: @desktop-width) {
@@ -15,7 +14,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 80px;
-        align-items: center;
     }
 }
 
@@ -121,9 +119,15 @@
             margin-bottom: 0;
         }
     }
-    
+
     @media (min-width: @tablet-width) {
         margin-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+        &-owner {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -152,7 +156,6 @@
     line-height: 18px;
     text-transform: uppercase;
 
-    
     padding: 13px;
 
     width: 100%;
@@ -334,6 +337,10 @@
         grid-template-columns: repeat(4, 221px);
         column-gap: 104px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding-bottom: 60px;
+    }
 }
 
 .field-textarea {
@@ -363,6 +370,10 @@
     @media (min-width: @tablet-width) {
         display: flex;
         margin-bottom: 72px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 82px;
     }
 }
 

@@ -1365,10 +1365,11 @@
   .cards__list {
     width: 1221px;
     margin: 0 auto;
+    margin-top: 115px;
     display: grid;
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 143px;
   }
 }
 .card {
@@ -1426,6 +1427,12 @@
     top: -35px;
   }
 }
+@media (min-width: 1440px) {
+  .card__img {
+    position: absolute;
+    left: 15%;
+  }
+}
 .card__img--big {
   display: block;
   margin: auto;
@@ -1439,6 +1446,12 @@
     position: absolute;
     left: 25%;
     top: -55px;
+  }
+}
+@media (min-width: 1440px) {
+  .card__img--big {
+    position: absolute;
+    left: 15%;
   }
 }
 .table {
@@ -1568,6 +1581,7 @@
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-column-gap: 79px;
+    padding-bottom: 86px;
   }
 }
 .other__title {
@@ -1758,6 +1772,12 @@
   .offer {
     grid-column: 2;
     grid-row: 2;
+    background-image: url("/cat-energy/img/background/catbag-desktop.jpg");
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("/cat-energy/img/background/catbag-desktop@2x.jpg");
   }
 }
 .offer__container {
@@ -1849,7 +1869,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    align-items: center;
   }
 }
 .field-group {
@@ -1951,6 +1970,11 @@
 @media (min-width: 768px) {
   .field-group__item {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .field-group__item-owner {
+    margin-bottom: 0;
   }
 }
 .field__lead {
@@ -2148,6 +2172,11 @@
     column-gap: 104px;
   }
 }
+@media (min-width: 1440px) {
+  .additional-list {
+    padding-bottom: 60px;
+  }
+}
 .field-textarea {
   margin-top: 37px;
 }
@@ -2173,6 +2202,11 @@
   .form__button-container {
     display: flex;
     margin-bottom: 72px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__button-container {
+    margin-bottom: 82px;
   }
 }
 @media (max-width: 767px) {

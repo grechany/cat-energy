@@ -24,10 +24,11 @@
     @media (min-width: @desktop-width) {
         width: 1221px;
         margin: 0 auto;
+        margin-top: 115px;
         display: grid;
         grid-template-columns: repeat(4, 245px);
         column-gap: 80px;
-        row-gap: 63px;
+        row-gap: 143px;
     }
 }
 
@@ -90,6 +91,11 @@
         
     }
 
+    @media (min-width: @desktop-width) {
+        position: absolute;
+        left: 15%;
+    }
+
     &--big {
         display: block;
         margin: auto;
@@ -103,6 +109,11 @@
             position: absolute;
             left: 25%;
             top: -55px;
+        }
+
+        @media (min-width: @desktop-width) {
+            position: absolute;
+            left: 15%;
         }
     }
 }
