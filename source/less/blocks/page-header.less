@@ -52,6 +52,8 @@
 
 .page-header__menu {
     margin: 0;
+
+    display: none; 
 }
 
 .site-menu {
@@ -65,7 +67,7 @@
     text-align: center;
     list-style: none;
 
-      @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
         display: flex;
         justify-content: space-between;
         min-width: 440px;
@@ -138,12 +140,6 @@
         text-decoration-color: @color-green;
     }
 }
-
-/*.site-menu--close {
-    @media (max-width: @mobie-width) {
-        display: none;
-    } 
-}*/
 
 .logo__image {
     @media (min-width: @tablet-width) {

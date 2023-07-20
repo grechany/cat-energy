@@ -15,11 +15,19 @@
     width: 34px;
     height: 38px;
     cursor: pointer;
-
-    background-image: url(/cat-energy/img/background/burger.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: transparent;
+
+    &--closed {
+        background-image: url(/cat-energy/img/background/burger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--opened {
+        background-image: url(/cat-energy/img/background/cross.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     @media (min-width: @tablet-width) {
         display: none;
