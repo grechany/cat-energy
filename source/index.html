@@ -130,9 +130,18 @@
 
             <div class="bottom__view">
 
-              <div class="bottom__images">
-                <div class="images__after images--close">
-                  <div class="images__before" id="exampleImage"></div>
+              <div class="example__images">
+                <div class="example__image example__image--after example__image--active" id="imageAfter">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="../img/example-image/before-tablet.png, ../img/example-image/before-tablet@2x.png" width="590" height="400">
+                    <img src="../img/example-image/after-mobile.png" srcset="../img/example-image/after-mobile@2x.png" width="243" height="232" alt="Кот до употребления корма">
+                  </picture>
+                </div>
+                <div class="example__image example__image--before" id="imageBefore">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="../img/example-image/after-tablet.png, ../img/example-image/after-tablet@2x.png" width="590" height="400">
+                    <img src="../img/example-image/before-mobile.png" srcset="../img/example-image/before-mobile@2x.png" width="243" height="232" alt="Кот после употребления корма">
+                  </picture>
                 </div>
               </div>
           

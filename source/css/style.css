@@ -1051,82 +1051,41 @@
     position: relative;
   }
 }
-.bottom__view {
-  width: 280px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .bottom__view {
-    width: 591px;
-    position: absolute;
-    top: -200px;
-    left: 0;
-    right: 0;
-  }
-}
-.bottom__images {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .bottom__images {
-    width: 590px;
+@media (max-width: 767px) {
+  .example__images {
+    width: 243px;
     margin: 0 auto;
-    margin-bottom: 25px;
-  }
-}
-.images__after {
-  width: 280px;
-  height: 232px;
-  background-image: url(/cat-energy/img/example-image/after-mobile.png);
-  background-size: 280px 232px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .images__after {
-    background-image: url(/cat-energy/img/example-image/after-mobile@2x.png);
   }
 }
 @media (min-width: 768px) {
-  .images__after {
-    width: 590px;
-    height: 576px;
-    background-image: url(/cat-energy/img/example-image/after-tablet.png);
-    background-size: 650px 576px;
+  .example__images {
+    width: 592px;
+    margin: 0 auto;
+    margin-top: -200px;
+    display: grid;
+    grid-template-columns: 296px 296px;
   }
 }
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
-  .images__after {
-    background-image: url(/cat-energy/img/example-image/after-tablet@2x.png);
-  }
-}
-.images__before {
-  width: 280px;
-  height: 232px;
-  background-image: url(/cat-energy/img/example-image/before-mobile.png);
-  background-size: 280px 232px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .images__before {
-    background-image: url(/cat-energy/img/example-image/before-mobile@2x.png);
-  }
-}
-@media (min-width: 768px) {
-  .images__before {
-    width: 290px;
-    height: 576px;
-    background-image: url(/cat-energy/img/example-image/before-tablet.png);
-    background-size: 590px 576px;
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
-  .images__before {
-    background-image: url(/cat-energy/img/example-image/before-tablet@2x.png);
+@media (min-width: 1440px) {
+  .example__images {
+    margin-top: -60px;
   }
 }
 @media (max-width: 767px) {
-  .images--close {
-    background: transparent;
+  .example__image {
+    display: none;
+  }
+  .example__image--active {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .example__image {
+    overflow: hidden;
+  }
+  .example__image--before {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .example__switcher {

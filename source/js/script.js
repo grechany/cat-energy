@@ -16,39 +16,56 @@ toggleButton.addEventListener("click", function () {
 });
 //Конец кода
 
-//Переключение изображений в примере на разрешении до 767px
+//Переключаем котов на мобильных
+const previousButton = document.getElementById('previousButton');
+const nextButton = document.getElementById('nextButton');
+const exampleSwither = document.getElementById('exampleSwither');
+const imageAfter = document.getElementById('imageAfter');
+const imageBefore = document.getElementById('imageBefore');
 
-const previousButton = document.getElementById("previousButton");
-const nextButton = document.getElementById("nextButton");
-const exampleSwither = document.getElementById("exampleSwither");
-const exampleImage = document.getElementById("exampleImage");
+function addEventListenersForSmallScreens() {
+  nextButton.addEventListener('click', function () {
+    exampleSwither.classList.remove('swither__toogler-before');
+    exampleSwither.classList.add('swither__toogler-after');
+    imageBefore.classList.add('example__image--active');
+    imageAfter.classList.remove('example__image--active');
+  });
 
-function applyStyles() {
-    if (window.innerWidth <= 767) {
-        previousButton.addEventListener("click", function () {
-            exampleSwither.classList.remove("swither__toogler-after");
-            exampleSwither.classList.add("swither__toogler-before");
-            exampleImage.classList.remove("images__after");
-            exampleImage.classList.add("images__before");
-        });
-
-        nextButton.addEventListener("click", function () {
-            exampleSwither.classList.remove("swither__toogler-before");
-            exampleSwither.classList.add("swither__toogler-after");
-            exampleImage.classList.remove("images__before");
-            exampleImage.classList.add("images__after");
-        });
-    } else {
-        // Если ширина экрана больше 767px, удаляем обработчики событий
-        previousButton.removeEventListener("click", function () {});
-        nextButton.removeEventListener("click", function () {});
-    }
+  previousButton.addEventListener('click', function() {
+    exampleSwither.classList.remove('swither__toogler-after');
+    exampleSwither.classList.add('swither__toogler-before');
+    imageBefore.classList.remove('example__image--active');
+    imageAfter.classList.add('example__image--active');
+  });
 }
 
-applyStyles();
+function removeEventListenersForSmallScreens() {
+  nextButton.removeEventListener('click', function () {
+    exampleSwither.classList.remove('swither__toogler-before');
+    exampleSwither.classList.add('swither__toogler-after');
+    imageBefore.classList.add('example__image--active');
+    imageAfter.classList.remove('example__image--active');
+  });
 
-// Обработчик изменения размера окна браузера
-window.addEventListener("resize", function () {
-    applyStyles();
-});
+  previousButton.removeEventListener('click', function() {
+    exampleSwither.classList.remove('swither__toogler-after');
+    exampleSwither.classList.add('swither__toogler-before');
+    imageBefore.classList.remove('example__image--active');
+    imageAfter.classList.add('example__image--active');
+  });
+}
+
+// Проверяем разрешение экрана при загрузке страницы и добавляем или удаляем обработчики событий
+function checkScreenSize() {
+  if (window.innerWidth <= 767) {
+    addEventListenersForSmallScreens();
+  } else {
+    removeEventListenersForSmallScreens();
+  }
+}
+
+// Вызываем функцию проверки разрешения экрана при загрузке страницы и при изменении размера окна
+checkScreenSize();
+window.addEventListener('resize', checkScreenSize);
+
 //Конец кода

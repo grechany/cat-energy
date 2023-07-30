@@ -199,82 +199,46 @@
     }
 }
 
-.bottom__view {
-    width: 280px;
-    margin: 0 auto;
-    
-    @media (min-width: @tablet-width) {
-        width: 591px;
-        position: absolute;
-        top: -200px;
-        left: 0;
-        right: 0;  
-    }
-}
-
-.bottom__images {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-
-    @media (min-width: @tablet-width) {
-        width: 590px;
-        margin: 0 auto;
-        margin-bottom: 25px;
-    }
-}
-
-.images__after {
-    width: 280px;
-    height: 232px;
-    background-image: url(/cat-energy/img/example-image/after-mobile.png);
-    background-size: 280px 232px;
-
-    @media (min-resolution: 2dppx) {
-        background-image: url(/cat-energy/img/example-image/after-mobile@2x.png);
-    }
-
-    @media (min-width: @tablet-width) {
-        width: 590px;
-        height: 576px;
-        background-image: url(/cat-energy/img/example-image/after-tablet.png);
-        background-size: 650px 576px;
-
-        @media (min-resolution: 2dppx) {
-            background-image: url(/cat-energy/img/example-image/after-tablet@2x.png);
-        }
-    }
-    
-}
-
-.images__before {
-    width: 280px;
-    height: 232px;
-    background-image: url(/cat-energy/img/example-image/before-mobile.png);
-    background-size: 280px 232px;
-
-    @media (min-resolution: 2dppx) {
-        background-image: url(/cat-energy/img/example-image/before-mobile@2x.png);
-    }
-
-    @media (min-width: @tablet-width) {
-        width: 290px;
-        height: 576px;
-        background-image: url(/cat-energy/img/example-image/before-tablet.png);
-        background-size: 590px 576px;
-
-        @media (min-resolution: 2dppx) {
-            background-image: url(/cat-energy/img/example-image/before-tablet@2x.png);
-        }
-    }
-}
-
-.images--close {
+//Изображения котов
+.example__images {
     @media (max-width: @mobie-width) {
-        background: transparent;
+        width: 243px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: @tablet-width) {
+        width: 592px;
+        margin: 0 auto;
+        margin-top: -200px;
+        display: grid;
+        grid-template-columns: 296px 296px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-top: -60px;
     }
 }
 
+.example__image {
+    @media (max-width: @mobie-width) {
+        &--active {
+            display: block;
+        }
+
+        display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+        overflow: hidden;
+
+        &--before {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+//Слайдер
 .example__switcher {
     display: flex;
     justify-content: space-between;
